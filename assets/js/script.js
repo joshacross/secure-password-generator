@@ -1,28 +1,34 @@
-/* USER STORY
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
- */
-
-
 var generatePassword = function () {
-  debugger;
-  window.alert("Welcome to Secure Password Generator!\n\nPlease have the following criteria available:\n\Length of password (at least 8 characters and no more than 128 characters)\n\u2022Select if lowercase, uppercase, numeric, and/or special characters are needed.");
+  window.alert("Welcome to Secure Password Generator!\n\nPlease have the following criteria available:\n\Length of password (between 8 and 128 characters)\n\u2022Select if lowercase, uppercase, numeric, and/or special characters are needed.");
 
-  var getPasswordLength = function() {
-    var passwordLength = "";
+// /* USER STORY
+// AS AN employee with access to sensitive data
+// I WANT to randomly generate a password that meets certain criteria
+// SO THAT I can create a strong password that provides greater security
+//  */
+
+// // Variables
+// var passwordLength = ""
+// var includeLowercase = "";
+// var includeUppercase = "";
+// var includeSpecialCharacters = "";
+
+
+//   var getPasswordLength = function() {
+
+//     var passwordLength = "";
     while (passwordLength === "" || passwordLength === null || passwordLength < 8 || passwordLenth > 128) {
       //Prompt password character length
       window.prompt("How many characters would you like your password to be? \n\u2022Password Length must be at between 8 characters and 128 characters long");
       
-      console.log("Password length is " + passwordLength + " characters long");
-      return passwordLength
-    }
-  }
+//       console.log("Password length is " + passwordLength + " characters long");
+//       return passwordLength
+//     }
+//   }
 
-  getCharacterConditions();
+//   getCharacterConditions();
 
-  var getCharacterConditions = function() {
+//   var getCharacterConditions = function() {
 
     // Loop data validation, user must select at least one condition (lowercase, uppercase, or special characters)
     while (includeLowercase, includeUppercase, includeSpecialCharacters) {
@@ -59,14 +65,14 @@ var generatePassword = function () {
 
 //     const passwordCharacters = []
 //     for (let i = 0; i < characterAmount; i++) {
-//       const.characterCode = charCodes[Math.floor(Math.random() * characterLength)]
+//       passwordDisplay.characterCode = charCodes[Math.floor(Math.random() * characterLength)]
 //     }
 //   }
 
 // }
 
 
-// passwordDisplay.innerText = password
+passwordDisplay.innerText = password
 
 // Assignment code here
 // Get references to the #generate element
@@ -82,14 +88,4 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword)
-
-generatePassword();
-
-
-// Variables
-var passwordLength = ""
-var includeLowercase = "";
-var includeUppercase = "";
-var includeSpecialCharacters = "";
-
+generateBtn.addEventListener("click", writePassword);
